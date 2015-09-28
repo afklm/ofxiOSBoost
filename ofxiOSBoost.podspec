@@ -10,14 +10,17 @@ Boost is the library that can (and should) be used to ease c++ development.
   s.author       = { "Danoli3" => "danoli3@gmail.com" }
   s.source       = { :git => "https://github.com/danoli3/ofxiOSBoost.git", :tag => "#{s.version}" }
 
-  s.platform     = :ios, '8.0'
-  s.ios.deployment_target = '8.0'
+  s.platform     = :ios, '4.0'
+
   s.requires_arc = false
-  s.ios.source_files = "libs/boost/include/**/*.{h,hpp,ipp}"
-  s.ios.header_mappings_dir = "libs/boost/include"
-  s.ios.public_header_files = "libs/boost/include/**/*.{h,hpp,ipp}"
+  s.source_files = "libs/boost/include/**/*.{h,hpp,ipp}"
+  s.header_mappings_dir = "libs/boost/include"
+  
+  
+  
+  s.public_header_files = "libs/boost/include/**/*.{h,hpp,ipp}"
 
-  s.ios.preserve_paths = "libs/boost/include/**/*.{h,hpp,ipp}", "libs/boost/ios/**/*.a"
-  s.ios.vendored_libraries = "libs/boost/ios/**/*.a"
-
+  s.preserve_paths = "libs/boost/include/*","libs/boost/include/**/*", "libs/boost/ios/**/*.a"
+  s.vendored_libraries = "libs/boost/ios/**/*.a"
+  s.library = 'z'
 end
