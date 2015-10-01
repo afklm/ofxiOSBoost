@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ofxiOSBoost"
-  s.version      = "1.58.0"
+  s.version      = "1.58.1"
   s.summary      = "Boost C++ library"
   s.description  = <<-DESC
 Boost is the library that can (and should) be used to ease c++ development.
@@ -8,7 +8,7 @@ Boost is the library that can (and should) be used to ease c++ development.
   s.homepage     = "http://www.boost.org"
   s.license      = 'Boost'
   s.author       = { "Danoli3" => "danoli3@gmail.com" }
-  s.source       = { :git => "https://github.com/danoli3/ofxiOSBoost.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/afklm/ofxiOSBoost.git", :tag => "#{s.version}" }
 
   s.platform     = :ios, '4.0'
 
