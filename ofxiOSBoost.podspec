@@ -22,5 +22,5 @@ Boost is the library that can (and should) be used to ease c++ development.
   s.vendored_libraries = "libs/boost/ios/**/*.a"
   s.library = 'z'
   
-  s.source = { :http => "https://www.dropbox.com/s/kfqowyq9c7o0u4m/libs-1.58.1.zip?dl=0" }
+  s.source = { :http => "http://www.l18.io/boost/libs-1.58.1.zip" }
 end
